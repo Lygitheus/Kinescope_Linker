@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Kinescope Linker",
+  "version": "0.6",
+  "description": "Добавляет кнопки с прямой ссылкой на трансляцию. Разработано для: «edu.mipt.ru»",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://edu.mipt.ru/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
