@@ -88,12 +88,11 @@ function addDirectLinks() {
     const header = container.querySelector(".flex.justify-between") || container.firstElementChild;
     if (header) header.appendChild(btn);
   });
-
-  highlightDivs();
 }
 
 // Первый запуск
 addDirectLinks();
+highlightDivs();
 
 // Следим за изменениями DOM
 const observer = new MutationObserver(() => {

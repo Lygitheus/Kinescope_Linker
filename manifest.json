@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Kinescope Linker",
-  "version": "0.7",
-  "description": "Разработано для: «edu.mipt.ru»",
+  "version": "0.72",
+  "description": "Разработано для: «edu.mipt.ru» (Код будущего).",
   "permissions": ["activeTab", "scripting"],
   "content_scripts": [
     {
