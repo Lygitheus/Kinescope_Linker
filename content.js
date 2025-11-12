@@ -51,7 +51,7 @@ function addDirectLinks() {
     return;
   }
 
-  console.log(`[Kinescope Linker] Найдено ссылок: ${iframes.length}`);
+  //console.log(`[Kinescope Linker] Найдено ссылок: ${iframes.length}`);
 
   iframes.forEach(iframe => {
     const src = iframe.getAttribute("src");
