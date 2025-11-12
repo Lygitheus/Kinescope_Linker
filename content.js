@@ -90,15 +90,10 @@ function addDirectLinks() {
   });
 }
 
-function main() {
-  addDirectLinks();
-  highlightDivs()
-}
-
 // Первый запуск
-main()
+addDirectLinks();
+highlightDivs();
 
-// Следим за изменениями DOM
 const observer = new MutationObserver(() => {
   addDirectLinks();
   highlightDivs();
@@ -106,4 +101,4 @@ const observer = new MutationObserver(() => {
 observer.observe(document.body, { childList: true, subtree: true });
 
 // Проверка каждые 30 секунд
-setInterval(main, 30 * 1000);
+setInterval(highlightDivs, 30 * 1000);
